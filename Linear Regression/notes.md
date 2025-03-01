@@ -12,6 +12,25 @@ Where:
 - **β₁** = Slope (coefficient)
 - **ε** = Error term (residuals)
 
+Linear Regression means linear in coefficents. look at the examples below for clear picture.<br>
+**Simple Linear Regression**
+```math
+y = \beta_0 + \beta_1 x + \epsilon
+y = \beta_0 + \beta_1 x + \epsilon ✅
+```
+
+**Polynomial Regression**
+```math
+y = \beta_0 + \beta_1 x + \beta_2 x^2 + \epsilon
+y = \beta_0 + \beta_1 x + \beta_2 x^2 + \epsilon ✅
+```
+
+**Log-Transformed Variable**
+```math
+y = \beta_0 + \beta_1 \log{x} + \epsilon
+y = \beta_0 + \beta_1 \log{x} + \epsilon ✅
+```
+
 ---
 
 ## 2️⃣ Assumptions of Linear Regression
