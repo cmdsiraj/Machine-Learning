@@ -24,7 +24,11 @@ For the model to be valid, the following **5 assumptions** must hold:
 
 ### **2. Independence of Errors (No Autocorrelation)**
 ✅ **Residuals should not be correlated with each other**.
-- **Check:** Durbin-Watson test (ideal value ≈ 2).
+- **Check:**
+  - Durbin-Watson test (ideal value ≈ 2).
+  - Plot residuals vs. time (for time-series data) or residuals vs. observation number.
+      - If errors are randomly scattered, they are independent.
+      - If errors show patterns (e.g., waves, cycles, trends) → Autocorrelation is present.
 - **Fix if violated:** Use **time-series models** like ARIMA, add **lag variables**.
 
 ### **3. Homoscedasticity (Constant Variance of Residuals)**
