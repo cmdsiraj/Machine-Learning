@@ -78,4 +78,23 @@ ______________
 #### How to do pruning in Skiti-learn (****)
 - We have many parameters that can limit the Decision Tree structure (Prune) and each parameter can take different values (so a lot of combinations to try on).
 - We can find the best match parameter values for our problem *dataset) by using some useful methods which are provided by the skiti-learn.
-  1. 
+  1. **GridSearchCV**:
+     - It tries all the combinations of the given paramenter ranges.
+     - Computationaly expensive and time consuming.
+     - **Example**:
+       - Let's say we have 3 parameters and we have give 1000 values of each paramenter to test fot ***GridSearchCV***, then it will try out all the 1000 combinations.
+  2. **RandomizeSearchCV**:
+     - In this, it samples the subsets of paramater ranges and tests them.
+     - So, it's computationaly inexpensive compared to `GridSearchCV` and less time taken.
+> **When `RandomizeSearchCV` tests only subset of values, then how can it be sure that the best possible combinations is with in this subset?**<br>
+> Well, it doesn't know that it is in this subset. It may not find the Global optimum, but it tries to get close to best possible values possible. it's just a **trade-off between time and performance**
+
+| Common Strategy |
+|---------------------|
+| Use `RandomizedSearchCV` to find a number of random samples from a wide range of parameter values. Then use `GridSearchCV` to test small incremental changes around the best values found by `RandomizedSearchCV`. |
+
+________________________________________________________________
+
+# Ensembles
+
+
