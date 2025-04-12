@@ -210,6 +210,7 @@ ________________________________________________________________
 _____
 > ***Ensembles reduce Errors by reducing bias (Boosting), variance (Bagging) or combining diverse models (stacking)***.
 __________________
+## Pros and Cons of each ensemble methods
 | Method      | Pros                                                                 | Cons                                                                 |
 |-------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
 | **Bagging** | - Reduces variance                                                   | - Does not reduce bias                                               |
