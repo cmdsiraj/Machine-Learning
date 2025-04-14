@@ -232,3 +232,10 @@ __________________
 |             | - Very flexible and powerful                                         | - Requires careful data partitioning (e.g., k-fold for base models)  |
 |             | - Can outperform single-type ensembles                               | - More computationally expensive                                     |
 
+----------------------------------
+## Notes
+ - When working with trees, we no need to convert category features into  `OneHot Encoded` values.
+   - **Why?**
+     - Trees don't assume any relation between feature values (like 0<5<9).
+     - They just split nodes based on yes/no. so order of the categorical variables doesn't matter.
+     - Also, while Working with `RandomForest`, having `OneHotEncoded` features will confuse the model making it complex and reduced in performance because the model doesn't know that these `OneHotEncoed` features are related (i.e., belong to one feature). so we get problem when taking the subset of features while splitting.
