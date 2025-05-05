@@ -98,7 +98,7 @@ ________________________________________________________________
 # Ensembles
 - Ensembles involve combining a number of weaker models into an ensemble. The end result is a stronger aggrigate model.
 > **Why combining weak learners can help?**
-> - A **weak learner** (say a shallow tree) has high bias and low variance.
+> - A **weak learner** (say a shallow tree) has low bias and high variance.
 > - One model like this performs poorly.
 > - But if we train many such learners on **different data slices**, each model will make different **mistakes**.
 > - **Mathematically:**
